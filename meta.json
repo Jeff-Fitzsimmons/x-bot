@@ -5,23 +5,31 @@
     //Required. Inputs the module expects.
     "inputs": [{
         "id"    : "url",
-        "title" : "URL"
+        "title" : "Google Script URL"
     }, { 
-        "id"    : "parameters",
-        "title" : "Parameters",
-        "description" : "A javascript object of request parameters"
+        "id"    : "message",
+        "title" : "Message Received",
+        "description" : "Message received from the user (all services)"
     }, {
-        "id" : "headers", 
-        "title" : "Headers",
-        "description" : "A javascript object of headers to set"
+        "id" : "slack_userid", 
+        "title" : "User ID (Slack)",
+        "description" : "User ID of the user (Slackbot only)"
+    }, {
+        "id" : "slack_channelid", 
+        "title" : "Channel ID (Slack)",
+        "description" : "Channel ID of the message (Slackbot only)"
+    }, {
+        "id" : "slack_teamid", 
+        "title" : "Team ID (Slack)",
+        "description" : "Team ID of the user (Slackbot only)"
     }],
     //Required. Outputs the module emits.
     "outputs": [{
-        "id": "body",
-        "title": "Body"
+        "id": "response",
+        "title": "Bot Response"
     }, {
-        "id" : "statusCode",
-        "title" : "Status Code"
+        "id" : "attachment_url",
+        "title" : "Attachment URL"
     }],
-    "title": "HTTP Get Request" /* Required.A display name for the module */
+    "title": "X-Bot" /* Required.A display name for the module */
 }

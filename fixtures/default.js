@@ -73,10 +73,8 @@ module.exports = _.merge({
              */
             input: {
                 //Replace VAR1 with the name of an expected input, and add more inputs as needed.
-                url: 'https://script.google.com/macros/s/AKfycbxuisah9fNniQqkyXDOHNrPTO8Ji1whCPeoPm3yvWEuAYrJ5OU/exec',
-                parameters: {
-                    text: 'hello'
-                }
+                url: 'https://script.google.com/macros/s/AKfycbzztSFnMDcyqPrTrbe57GuEfyKE6eN4rDzgupg3q2f4_oJpEqtY/exec',
+                message: 'hello'
             }
         }
     }

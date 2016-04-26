@@ -1,9 +1,9 @@
 {
-  "name": "http-get-request",
+  "name": "x-bot",
   "version": "1.0.0",
-  "description": "Issue an HTTP Get Request",
+  "description": "General-use spreadsheet bot that takes a message, looks up the result in a spreadsheet, and returns the response.",
   "main": "index.js",
-  "author": "Run Dexter, Inc",
+  "author": "David Hu",
   "license": "MIT",
   "private": true,
   "dependencies": {
@@ -13,6 +13,6 @@
   }, 
   "repository" : {
     "type" : "git",
-    "url"  : "https://github.com/rundexter/http-get-request"
+    "url"  : "https://github.com/octopi/x-bot"
   }
 }
