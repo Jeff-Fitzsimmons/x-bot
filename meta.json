@@ -5,7 +5,8 @@
     //Required. Inputs the module expects.
     "inputs": [{
         "id"    : "url",
-        "title" : "Google Script URL"
+        "title" : "Google Script URL",
+        "description": "See Readme on Github for more information"
     }, { 
         "id"    : "message",
         "title" : "Message Received",
