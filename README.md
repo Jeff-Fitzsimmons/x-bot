@@ -9,3 +9,4 @@ To obtain a Google Script URL:
 1. In the editor, select Publish -> Deploy as web app...
 1. In the dropdown labelled "Who has access to my app," choose "Anyone, even anonymous" and click "Deploy." Authorize if necessary.
 1. The URL you see is what should go as the input into this module's **Google Script URL** input
+1. Refresh the data in cell D1 (required)
