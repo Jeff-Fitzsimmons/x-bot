@@ -31,5 +31,6 @@
         "id" : "attachment_url",
         "title" : "Attachment URL"
     }],
-    "title": "X-Bot" /* Required.A display name for the module */
+    "title": "All-Purpose Spreadsheet Bot",
+    "icon": "table"
 }

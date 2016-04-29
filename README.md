@@ -1,42 +1,11 @@
-# Dexter Module
-> This folder contains the scaffolding for implementing a Dexter module. 
+# Using This Module
+This [Dexter](https://rundexter.com/) module takes a message as input, matches it against a set of regular expressions specified in a Google Sheet, and returns the URL. The module is configured to work with a specific spreadsheet template and a **Google Script URL** is a key input to the module that basically specifies that sheet to read from.
 
-## File Details
-### index.js
-> Entrypoint for your module: must export an object in the root that minimally
-> contains a run method.  The exported object will be wrapped in a Dexter
-> BaseStep class that provides the following functions:
->   * this.run(step, dexter); //You must implement this
->   * this.complete(data); //Call this ONCE if execution is successful
->   * this.fail(err); //Call this ONCE if there's a critical issue
->   * this.log(msgOrData); //Call this to log either a message or data
+To obtain a Google Script URL:
 
-### package.json
-> Standard Node.js `package.json` file that specifies the name of your module. 
-> The name of your module will need to be unique in the Dexter ecosystem.  
-> It's a good idea to prefix the module name with a unique username.
-
-### meta.json
-> Metadata required by the Dexter runtime. You should update this --
-> instructions within.
-
-### form 
-> For future use by the Dexter App Editor
-
-## Implmentation Details
-
-### Testing the module
-> Update the default fixture in `fixtures/default.js` with some artificial details for
-> testing. Minimally add dummy values for your inputs. When you're ready test your module:
-
-```shell
-$ dexter run  # or dexter run <fixture-name> 
-```
-
-### Registering the module
-> When you're ready to try your module out in a real App, you'll want to push it
-> into Dexter.  To do that, push it to the rundexter git server:
-
-```shell
-$ dexter push
-```
+1. Make a copy of [this sheet](https://docs.google.com/spreadsheets/d/1imo2Fn0aco5_WGfG2xEyge4Fi0mL7c1oaWHnoGSmC84/edit#gid=0)
+1. Modify your spreadsheet to generate the responses you want. The first column is a regular expression that matches the user's input, the second column is the response. (Make sure everything you add is above the `.*` line, which basically serves as the catch-all response.)
+1. In that sheet, go to Tools -> Script editor
+1. In the editor, select Publish -> Deploy as web app...
+1. In the dropdown labelled "Who has access to my app," choose "Anyone, even anonymous" and click "Deploy." Authorize if necessary.
+1. The URL you see is what should go as the input into this module's **Google Script URL** input

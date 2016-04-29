@@ -1,11 +1,11 @@
 {
   "name": "x-bot",
   "version": "1.0.0",
-  "description": "General-use spreadsheet bot that takes a message, looks up the result in a spreadsheet, and returns the response.",
+  "description": "Takes a message, looks up the result in a Google Sheet, and returns the response. Requires a Google Script URL. See Readme for more.",
   "main": "index.js",
   "author": "David Hu",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "dependencies": {
     "lodash": "^3.9.3",
     "q": "^1.4.1",
