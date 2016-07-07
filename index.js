@@ -28,7 +28,8 @@ module.exports = {
       }
     };
 
-    agent.get(url).type('json').query(parameters).end(function (err, result) {
+    agent.post(url).type('json').send(parameters).end(function (err, result) {
+			console.log(result, err);
       self.complete({
         response: result.body.row[3],
         attachment_url: result.body.row[4]
